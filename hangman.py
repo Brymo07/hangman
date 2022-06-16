@@ -35,8 +35,8 @@ def hangman():
                 word_letters.remove(user_letter)
 
             else:
-                lives = lives - 1   # takes away a loife if wrong
-                print('Letter is not the word. ')  
+                lives = lives - 1   # takes away a life if wrong
+                print('Your letter',user_letter,  'is not in the word. ')  
 
         elif user_letter in used_letters:
             print('You have already used that  letter. Please try again.')
@@ -46,9 +46,10 @@ def hangman():
     # gets here where len(word_letters) == 0 OR when lives == 0
     if lives == 0:
         print('You died, sorry. The word was', word)
-    print('You guessed the word', word, '!!')
+    else:
+        print('You guessed the word', word, '!!')
     
-
+print(len(words))
 hangman()
 
 
