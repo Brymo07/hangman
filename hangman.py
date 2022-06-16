@@ -1,6 +1,4 @@
 import random
-from re import I
-from tkinter import N
 from words import words
 import string
 
@@ -48,7 +46,7 @@ def hangman():
     # gets here where len(word_letters) == 0 OR when lives == 0
     if lives == 0:
         print('You died, sorry. The word was', word)
-    print('You guessed the word', word, '!!''\n' 'Awesome!')
+    print('You guessed the word', word, '!!')
     
 
 hangman()
